@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filly Studio - A video marketing agency</title>
+    <link rel="stylesheet" href="css/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="home-container" data-scroll-container>
+      <header class="header"></header>
+      <div class="bov" data-scroll-section></div>
+      <div class="bov" data-scroll-section></div>
+      <div class="bov" data-scroll-section></div>
+      <div class="bov" data-scroll-section></div>
+      <div class="bov" data-scroll-section></div>
+    </div>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/all.js"></script>
+    <script type="text/javascript">
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+      });
+    </script>
+  </body>
+</html>

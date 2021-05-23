@@ -10,12 +10,106 @@
   </head>
   <body>
     <div class="home-container" data-scroll-container>
-      <header class="header"></header>
-      <div class="bov" data-scroll-section></div>
-      <div class="bov" data-scroll-section></div>
-      <div class="bov" data-scroll-section></div>
-      <div class="bov" data-scroll-section></div>
-      <div class="bov" data-scroll-section></div>
+      <header class="header">
+        <div class="header-ctn ctn">
+          <div class="logo-box"></div>
+          <div class="menu-box"></div>
+          <div class="header-span">Home</div>
+        </div>
+      </header>
+      <div class="side-menu"></div>
+      <section class="home" data-scroll-section>
+        <div class="home-ctn">
+          <div class="home-text-ctn">
+            <h1 class="home-heading">
+              We make motion speak emotion in the market
+            </h1>
+            <p class="home-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              saepe accusantium cum eum alias vitae quam voluptas officiis.
+            </p>
+          </div>
+          <div class="home-img"></div>
+        </div>
+      </section>
+      <section class="values" data-scroll-section>
+        <div class="home-ctn">
+          <div class="section-header">
+            <h2 class="section-heading">What we do</h2>
+          </div>
+          <div class="values-ctn">
+            <div class="values-box"></div>
+            <div class="values-box"></div>
+            <div class="values-box"></div>
+          </div>
+        </div>
+      </section>
+      <section class="showcase" data-scroll-section>
+        <div class="home-ctn">
+          <div class="section-header">
+            <h2 class="section-heading">
+              We believe in creativity <br />
+              & leverage
+            </h2>
+          </div>
+          <div class="home-img"></div>
+        </div>
+      </section>
+      <div class="portfolio" data-scroll-section>
+        <div class="home-ctn">
+          <div class="section-header">
+            <h2 class="section-heading">
+              Some of our featured <br />
+              works
+            </h2>
+          </div>
+          <div class="portfolio-ctn">
+            <div class="portfolio-box"></div>
+            <div class="portfolio-box"></div>
+            <div class="portfolio-box"></div>
+            <div class="portfolio-box"></div>
+          </div>
+        </div>
+      </div>
+      <section class="testimonials" data-scroll-section>
+        <div class="home-ctn">
+          <div class="section-header">
+            <h2 class="section-heading">
+              What people say <br />
+              about us
+            </h2>
+          </div>
+          <div class="testimonial-ctn"></div>
+          <div class="testimonial-ctrl-box"></div>
+        </div>
+      </section>
+      <section class="work" data-scroll-section>
+        <div class="home-ctn">
+          <div class="work-ctn">
+            <div class="section-header">
+              <!-- <small class="section-accent-text">Contact</small> -->
+              <h2 class="section-heading">Get In Touch</h2>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+                reiciendis ducimus culpa natus quasi? Asperiores neque mollitia
+                atque repudiandae voluptas?
+              </p>
+            </div>
+
+            <form class="form"></form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" data-scroll-section>
+        <div class="home-ctn">
+          <div class="footer-ctn">
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+          </div>
+        </div>
+        <div class="footer-copy-ctn"><p>&copy;fillystudio 2021</p></div>
+      </footer>
     </div>
     <script src="js/locomotive-scroll.min.js"></script>
     <script src="js/all.js"></script>
@@ -23,6 +117,15 @@
       const scroller = new LocomotiveScroll({
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
+      });
+    </script>
+    <script>
+      const menu = document.querySelector(".menu-box");
+      const secondaryMenu = document.querySelector(".side-menu");
+
+      menu.addEventListener("click", (e) => {
+        menu.classList.toggle("active");
+        secondaryMenu.classList.toggle("active");
       });
     </script>
   </body>

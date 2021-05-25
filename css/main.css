@@ -97,7 +97,7 @@ body {
 } */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -142,18 +142,18 @@ body {
   position: relative;
   height: 2px;
   width: 80%;
-  max-width: 56px;
+  max-width: 48px;
   background: var(--color-04);
   transition: 300ms;
   border-radius: 4px;
 }
 
 .menu-box::before {
-  transform: translateY(-7.2px);
+  transform: translateY(-6.4px);
 }
 
 .menu-box::after {
-  transform: translateY(7.2px);
+  transform: translateY(6.4px);
 }
 
 .menu-box.active::before {

@@ -115,7 +115,7 @@ body {
 
 .logo-box,
 .menu-box {
-  width: 80px;
+  width: 64px;
   height: 100%;
   /* border-right: 2px solid var(--color-04); */
 }
@@ -149,11 +149,11 @@ body {
 }
 
 .menu-box::before {
-  transform: translateY(-6.4px);
+  transform: translateY(-5.6px);
 }
 
 .menu-box::after {
-  transform: translateY(6.4px);
+  transform: translateY(5.6px);
 }
 
 .menu-box.active::before {

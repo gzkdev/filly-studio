@@ -304,6 +304,7 @@ body {
 
 .footer-box {
   width: 100%;
+  max-width: 200px;
   /* min-height: 280px; */
   text-align: center;
   /* border: 1px solid var(--color-03); */

@@ -44,7 +44,6 @@
   width: 100%;
   max-width: var(--max-width);
   height: 100%;
-  /* padding: 16px 8px; */
   margin: 0 auto;
 }
 
@@ -92,13 +91,6 @@ body {
   overflow-y: auto;
 }
 
-/* .bov {
-  width: 90%;
-  min-height: 70vh;
-  margin: 48px auto;
-  border: 2px solid var(--color-04);
-} */
-
 .header {
   position: fixed;
   top: 0;
@@ -120,6 +112,12 @@ body {
 .menu-box {
   width: 56px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-04);
   /* border-right: 2px solid var(--color-04); */
 }
 
@@ -128,14 +126,6 @@ body {
 }
 
 .menu-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* background: var(--color-07); */
-  /* border-left: 1px solid var(--color-04); */
-  border-right: none;
-  cursor: pointer;
   transition: 300ms;
 }
 
@@ -210,9 +200,14 @@ body {
   /* border: 1px solid var(--color-07); */
 }
 
+.home-ctn--wide {
+  padding: 120px 0 48px 0;
+}
+
 .home-text-ctn {
   width: 100%;
   max-width: 640px;
+  padding: 24px 12px 0 12px;
 }
 
 .home-heading {
@@ -222,7 +217,7 @@ body {
 
 .home-img {
   width: 100%;
-  height: 520px;
+  height: 480px;
   background: var(--color-05);
   margin-top: 48px;
 }
@@ -241,7 +236,7 @@ body {
   width: 100%;
   /* min-height: 200px; */
   /* border: 1px solid var(--color-03); */
-  padding: 16px 32px;
+  padding: 16px 15%;
   margin: 24px auto;
 }
 
@@ -269,14 +264,14 @@ body {
   width: 100%;
   min-height: 400px;
   margin: 16px auto;
-  border: 1px solid var(--color-03);
+  border: 1px solid var(--color-06);
 }
 
 .testimonial-ctn {
   width: 100%;
   max-width: 560px;
   min-height: 360px;
-  border: 1px solid var(--color-03);
+  border: 1px solid var(--color-06);
 }
 
 .testimonial-ctrl-box {
@@ -284,7 +279,7 @@ body {
   max-width: 560px;
   height: 48px;
   margin-top: 18px;
-  border: 1px solid var(--color-03);
+  border: 1px solid var(--color-06);
 }
 
 .work-ctn,
@@ -299,12 +294,13 @@ body {
 .form {
   width: 100%;
   min-height: 480px;
-  border: 1px solid var(--color-03);
+  border: 1px solid var(--color-06);
 }
 
 .footer {
   width: 100%;
-  /* font-size: 1rem; */
+  font-size: 1rem;
+  letter-spacing: 0.4px;
 }
 
 .footer-box {
@@ -341,14 +337,14 @@ body {
 }
 
 .footer-copy-ctn {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
-  height: 80px;
+  height: 100px;
   width: 100%;
   color: var(--color-04);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  padding: 36px 24px;
   border-top: 1px solid var(--color-04);
-  padding: 24px;
 }
 
 @media (min-width: 768px) {

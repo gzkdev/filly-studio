@@ -41,7 +41,7 @@
           </div>
           <div class="values-ctn">
             <div class="values-box">
-              <span class="fas fa-video values-box-icon"></span>
+              <span class="fas fa-square values-box-icon"></span>
               <h4
                 class="values-box-heading"
                 data-scroll
@@ -167,13 +167,14 @@
         <div class="home-ctn">
           <div class="footer-ctn">
             <div class="footer-box">
-              <h4 class="values-box-heading">Filly studio</h4>
+              <h5 class="values-box-heading">Filly studio</h5>
               <p class="footer-paragraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam quis maxime vel.
               </p>
             </div>
             <div class="footer-box">
+              <h5 class="values-box-heading">Socials</h5>
               <nav class="footer-nav">
                 <ul class="footer-nav-list">
                   <li class="footer-nav-item">
@@ -200,7 +201,7 @@
               </nav>
             </div>
             <div class="footer-box">
-              <h4 class="values-box-heading">Site Map</h4>
+              <h5 class="values-box-heading">Site Map</h5>
               <nav class="footer-nav">
                 <ul class="footer-nav-list-v">
                   <li class="footer-nav-item">
@@ -210,7 +211,7 @@
                     <a href="#" class="footer-nav-link">About</a>
                   </li>
                   <li class="footer-nav-item">
-                    <a href="#" class="footer-nav-link">Featured work</a>
+                    <a href="#" class="footer-nav-link">Projects</a>
                   </li>
                   <li class="footer-nav-item">
                     <a href="#" class="footer-nav-link">Contact</a>
@@ -225,20 +226,6 @@
     </div>
     <script src="js/locomotive-scroll.min.js"></script>
     <script src="js/all.js"></script>
-    <script type="text/javascript">
-      const scroller = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-      });
-    </script>
-    <script>
-      const menu = document.querySelector(".menu-box");
-      const secondaryMenu = document.querySelector(".side-menu");
-
-      menu.addEventListener("click", (e) => {
-        menu.classList.toggle("active");
-        secondaryMenu.classList.toggle("active");
-      });
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
